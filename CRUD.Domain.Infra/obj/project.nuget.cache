@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "vSpSMexa25HYStZrsRfLwpZ3drcQJ1GDUd3K1G66SuQzt3YAerb6kBcMrt1Zt9H8oAU0+nG0DrvLn4kgzvH3xg==",
+  "success": true,
+  "projectFilePath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\CRUD.Domain.Infra.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Lolla\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Lolla\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
