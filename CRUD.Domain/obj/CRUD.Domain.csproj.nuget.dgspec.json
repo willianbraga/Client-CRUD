@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj": {}
+    "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj": {}
   },
   "projects": {
-    "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj": {
+    "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
+        "projectUniqueName": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
         "projectName": "CRUD.Domain",
-        "projectPath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
+        "projectPath": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
         "packagesPath": "C:\\Users\\Lolla\\.nuget\\packages\\",
-        "outputPath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\obj\\",
+        "outputPath": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lolla\\AppData\\Roaming\\NuGet\\NuGet.Config"

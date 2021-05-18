@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "u0EsoVJERiG/5Pe49l9yXXr2yDqX1Io8oPKfjPFyuiB9Af2BTYthUv52oH6zuT1j27HL3RyDt6n53UfCGbdaAg==",
+  "dgSpecHash": "Ct6V5jIKRzdx3YyEfBsCndtxRbtH8cKyRHtivRrtdohSUnz5vnHxCNGjWaa90KX4UNes48hnO292aUTcECTbvw==",
   "success": true,
-  "projectFilePath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
+  "projectFilePath": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lolla\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Lolla\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"

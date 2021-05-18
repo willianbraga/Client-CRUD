@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\CRUD.Domain.Infra.csproj": {}
+    "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\CRUD.Domain.Infra.csproj": {}
   },
   "projects": {
-    "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\CRUD.Domain.Infra.csproj": {
+    "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\CRUD.Domain.Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\CRUD.Domain.Infra.csproj",
+        "projectUniqueName": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\CRUD.Domain.Infra.csproj",
         "projectName": "CRUD.Domain.Infra",
-        "projectPath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\CRUD.Domain.Infra.csproj",
+        "projectPath": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\CRUD.Domain.Infra.csproj",
         "packagesPath": "C:\\Users\\Lolla\\.nuget\\packages\\",
-        "outputPath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\obj\\",
+        "outputPath": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lolla\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -25,8 +25,8 @@
         "frameworks": {
           "netstandard2.0": {
             "projectReferences": {
-              "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj": {
-                "projectPath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj"
+              "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj": {
+                "projectPath": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj": {
+    "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
+        "projectUniqueName": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
         "projectName": "CRUD.Domain",
-        "projectPath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
+        "projectPath": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\CRUD.Domain.csproj",
         "packagesPath": "C:\\Users\\Lolla\\.nuget\\packages\\",
-        "outputPath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\obj\\",
+        "outputPath": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Lolla\\AppData\\Roaming\\NuGet\\NuGet.Config"
