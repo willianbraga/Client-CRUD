@@ -17,6 +17,13 @@ namespace CRUD.Domain.Entities.Client
         public string Phone { get; set; }
         public DateTime BirthDate { get; set; }
 
+        public void UpdateClient(UpdateClient clientItem)
+        {
+            this.Name = clientItem.Name;
+            this.Email = clientItem.Email;
+            this.Phone = clientItem.Phone;
+            this.BirthDate = clientItem.BirthDate;
+        }
 
     }
 }

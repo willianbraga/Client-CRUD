@@ -28,9 +28,18 @@ namespace CRUD.Domain.Api.Controllers
         [Route("")]
         [HttpGet]
         public IEnumerable<ClientItem> GetAll(
-        [FromServices] IClientRepository repository)
+            [FromServices] IClientRepository repository)
         {
             return repository.GetAll();
+        }
+
+        [Route("")]
+        [HttpPut]
+        public GenericResult Update(
+            [FromBody] UpdateClient updateClient,
+            [FromServices] ClientHandler handler)
+        {
+            return (GenericResult)handler.Handle(updateClient);
         }
     }
 }
