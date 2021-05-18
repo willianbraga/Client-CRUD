@@ -6,7 +6,7 @@ using CRUD.Domain.Utils.Validations;
 
 namespace CRUD.Domain.Handlers.Contracts
 {
-    public class ClientHandler : Notifiable, IHandler<CreateClient>, IHandler<UpdateClient>
+    public class ClientHandler : Notifiable, IHandler<CreateClient>, IHandler<UpdateClient>, IHandler<DeleteClient>
     {
         private static string ERROR_MESSAGE = "Opa, temos um erro aqui, por favor verifique os parametros informados.";
         private static string SUCESS_MESSAGE = "Procedimento efetuado com sucesso.";
@@ -43,6 +43,18 @@ namespace CRUD.Domain.Handlers.Contracts
             client.UpdateClient(command);
 
             _repository.Update(client);
+
+            return new GenericResult(SUCESS_MESSAGE, true, client);
+        }
+
+        public ICommandResult Handle(DeleteClient command)
+        {
+            command.Validate();
+            if (command.Invalid)
+                return new GenericResult(ERROR_MESSAGE, false, command.Notifications);
+                
+            var client = _repository.GetById(command.Id);
+            _repository.Delete(client);
 
             return new GenericResult(SUCESS_MESSAGE, true, client);
         }

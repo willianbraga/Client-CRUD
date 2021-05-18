@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using CRUD.Domain.Entities.Client;
 using CRUD.Domain.Entities.Generics;
@@ -25,21 +26,37 @@ namespace CRUD.Domain.Api.Controllers
             return (GenericResult)handler.Handle(createClient);
         }
 
+        /// <summary>Listar todos os registros de Clientes</summary>
         [Route("")]
         [HttpGet]
-        public IEnumerable<ClientItem> GetAll(
+        public IEnumerable<ClientItem> GetAllClients(
             [FromServices] IClientRepository repository)
         {
             return repository.GetAll();
         }
 
+        /// <summary>Atualiza Registro de Cliente</summary>
+        /// <param name="updateClient">Objeto de requisição Cliente</param>
+        /// <param name="handler">Injeção de dependencia</param>
         [Route("")]
         [HttpPut]
-        public GenericResult Update(
+        public GenericResult UpdateClient(
             [FromBody] UpdateClient updateClient,
             [FromServices] ClientHandler handler)
         {
             return (GenericResult)handler.Handle(updateClient);
+        }
+
+        /// <summary>Criar novo Registro de Cliente</summary>
+        /// <param name="deleteClient">Objeto de requisição Cliente</param>
+        /// <param name="handler">Injeção de dependencia</param>
+        [Route("")]
+        [HttpDelete]
+        public GenericResult DeleteClient(
+            [FromBody] DeleteClient deleteClient,
+            [FromServices] ClientHandler handler)
+        {
+            return (GenericResult)handler.Handle(deleteClient);
         }
     }
 }

@@ -10,6 +10,7 @@ namespace CRUD.Domain.Repositories
         IEnumerable<ClientItem> GetAll();
         ClientItem GetById(Guid id);
         void Update(ClientItem client);
+        void Delete(ClientItem client);
 
     }
 }

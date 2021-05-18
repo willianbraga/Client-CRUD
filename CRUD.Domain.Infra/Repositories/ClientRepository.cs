@@ -23,6 +23,12 @@ namespace CRUD.Domain.Infra.Repositories
             _context.SaveChanges();
         }
 
+        public void Delete(ClientItem client)
+        {
+            _context.Remove(client);
+            _context.SaveChanges();
+        }
+
         public IEnumerable<ClientItem> GetAll()
         {
             return _context.Clients

@@ -10,6 +10,9 @@ namespace CRUD.Domain.Tests.Repositories
         public void Create(ClientItem client)
         { }
 
+        public void Delete(ClientItem client)
+        { }
+
         public IEnumerable<ClientItem> GetAll()
         {
             throw new System.NotImplementedException();
