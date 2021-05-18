@@ -12,7 +12,7 @@ namespace CRUD.Domain.Utils.Validations
 
         public ValidateContract HasMinLen(string value, int size, string property, string message)
         {
-            if (value.Length < size)
+            if (value.Length <= size)
                 AddNotification(property, message);
 
             return this;

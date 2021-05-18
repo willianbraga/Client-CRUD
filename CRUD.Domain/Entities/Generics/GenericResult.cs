@@ -1,6 +1,8 @@
+using CRUD.Domain.Utils.Commands;
+
 namespace CRUD.Domain.Entities.Generics
 {
-    public class GenericResult
+    public class GenericResult : ICommandResult
     {
         public GenericResult() { }
 
