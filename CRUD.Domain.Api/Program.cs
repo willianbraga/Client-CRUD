@@ -3,6 +3,8 @@ using Microsoft.Extensions.Hosting;
 
 namespace CRUD.Domain.Api
 {
+#pragma warning disable 1591
+
     public class Program
     {
         public static void Main(string[] args)

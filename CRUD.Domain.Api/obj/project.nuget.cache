@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "OJnM99K4WEB6MgmnNFaV66UYGPgKO7V51EGGkUIi6rK14sren22pgtfxKBWU6to9wggsSSSp8aK5+qjh5mfP5w==",
+  "dgSpecHash": "jyN4u6GrLaq3bPlju/UaUwC/wk2b3zV4tsQNf2bft1uVDkMu8bigCXDWh0Eeq+648qLFTIbphkSj69gucE4x1g==",
   "success": true,
   "projectFilePath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Api\\CRUD.Domain.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Lolla\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.1.1\\microsoft.aspnetcore.mvc.versioning.4.1.1.nupkg.sha512",
+    "C:\\Users\\Lolla\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\4.1.1\\microsoft.aspnetcore.mvc.versioning.apiexplorer.4.1.1.nupkg.sha512",
     "C:\\Users\\Lolla\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.0\\microsoft.bcl.asyncinterfaces.1.1.0.nupkg.sha512",
     "C:\\Users\\Lolla\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
     "C:\\Users\\Lolla\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

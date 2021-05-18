@@ -8,6 +8,7 @@ using CRUD.Domain.Infra.Repositories;
 using CRUD.Domain.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -16,6 +17,8 @@ using Microsoft.OpenApi.Models;
 
 namespace CRUD.Domain.Api
 {
+#pragma warning disable 1591
+
     public class Startup
     {
         private const string SWAGGERFILE_PATH = "./swagger/v1/swagger.json";
@@ -46,6 +49,19 @@ namespace CRUD.Domain.Api
             services.AddTransient<ClientHandler, ClientHandler>();
 
             AddSwagger(services);
+
+            services.AddApiVersioning(x =>
+            {
+                x.DefaultApiVersion = new ApiVersion(1, 0);
+                x.ReportApiVersions = true;
+                x.AssumeDefaultVersionWhenUnspecified = true;
+            });
+
+            services.AddVersionedApiExplorer(x =>
+            {
+                x.GroupNameFormat = "'v'VVV";
+                x.SubstituteApiVersionInUrl = true;
+            });
 
         }
 
