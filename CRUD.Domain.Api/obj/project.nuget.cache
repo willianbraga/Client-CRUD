@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JhCciOXqsB5D2MYb6AT9dc5VVmvox+b2z+o3oImSnXvt9baOnMYctNETmYUqToDIxAA4Y2GK0rOrSmLO/P8l+g==",
+  "dgSpecHash": "jyN4u6GrLaq3bPlju/UaUwC/wk2b3zV4tsQNf2bft1uVDkMu8bigCXDWh0Eeq+648qLFTIbphkSj69gucE4x1g==",
   "success": true,
-  "projectFilePath": "d:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Api\\CRUD.Domain.Api.csproj",
+  "projectFilePath": "D:\\Developer\\Empresas\\Daycoval\\Projeto CRUD\\CRUD.Domain.Api\\CRUD.Domain.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Lolla\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning\\4.1.1\\microsoft.aspnetcore.mvc.versioning.4.1.1.nupkg.sha512",
     "C:\\Users\\Lolla\\.nuget\\packages\\microsoft.aspnetcore.mvc.versioning.apiexplorer\\4.1.1\\microsoft.aspnetcore.mvc.versioning.apiexplorer.4.1.1.nupkg.sha512",

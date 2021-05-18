@@ -1,6 +1,8 @@
+using System.Collections.Generic;
 using CRUD.Domain.Entities.Client;
 using CRUD.Domain.Entities.Generics;
 using CRUD.Domain.Handlers.Contracts;
+using CRUD.Domain.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRUD.Domain.Api.Controllers
@@ -18,10 +20,17 @@ namespace CRUD.Domain.Api.Controllers
         [HttpPost]
         public GenericResult CreateClient(
             [FromBody] CreateClient createClient,
-            [FromServices] ClientHandler handler
-        )
+            [FromServices] ClientHandler handler)
         {
             return (GenericResult)handler.Handle(createClient);
+        }
+
+        [Route("")]
+        [HttpGet]
+        public IEnumerable<ClientItem> GetAll(
+        [FromServices] IClientRepository repository)
+        {
+            return repository.GetAll();
         }
     }
 }
