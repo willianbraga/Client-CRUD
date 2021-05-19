@@ -20,6 +20,8 @@ export class ListClientComponent implements OnInit {
   }
 
   deleteClient(id: string) {
+    if (!window.confirm('Deseja continuar com a exclusão do registro?'))
+      return;
     this.clientService.deleteClient(id).subscribe(res => {
       this.loadClients();
     });
