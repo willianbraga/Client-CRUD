@@ -35,6 +35,17 @@ namespace CRUD.Domain.Api.Controllers
             return repository.GetAll();
         }
 
+        /// <summary>Listar todos os registros de Clientes</summary>
+        /// <param name="id">ID do Cliente</param>
+        /// <param name="repository">Injeção de dependencia</param>
+        [Route("{id}")]
+        [HttpGet]
+        public ClientItem GetClientById(int id,
+            [FromServices] IClientRepository repository)
+        {
+            return repository.GetById(id);
+        }
+
         /// <summary>Atualiza Registro de Cliente</summary>
         /// <param name="updateClient">Objeto de requisição Cliente</param>
         /// <param name="handler">Injeção de dependencia</param>
@@ -50,10 +61,10 @@ namespace CRUD.Domain.Api.Controllers
         /// <summary>Criar novo Registro de Cliente</summary>
         /// <param name="deleteClient">Objeto de requisição Cliente</param>
         /// <param name="handler">Injeção de dependencia</param>
-        [Route("")]
+        [Route("{Id}")]
         [HttpDelete]
         public GenericResult DeleteClient(
-            [FromBody] DeleteClient deleteClient,
+            [FromRoute] DeleteClient deleteClient,
             [FromServices] ClientHandler handler)
         {
             return (GenericResult)handler.Handle(deleteClient);

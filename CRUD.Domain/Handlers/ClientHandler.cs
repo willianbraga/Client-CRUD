@@ -49,11 +49,10 @@ namespace CRUD.Domain.Handlers.Contracts
 
         public ICommandResult Handle(DeleteClient command)
         {
-            command.Validate();
-            if (command.Invalid)
-                return new GenericResult(ERROR_MESSAGE, false, command.Notifications);
-                
             var client = _repository.GetById(command.Id);
+            if (client == null)
+                return new GenericResult(SUCESS_MESSAGE, true, "Não possui cliente na base");
+
             _repository.Delete(client);
 
             return new GenericResult(SUCESS_MESSAGE, true, client);

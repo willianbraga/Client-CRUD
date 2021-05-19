@@ -18,7 +18,7 @@ namespace CRUD.Domain.Tests.Repositories
             throw new System.NotImplementedException();
         }
 
-        public ClientItem GetById(Guid id)
+        public ClientItem GetById(int id)
         {
             return new ClientItem("Willian Braga", "willian.kaeru@gmail.com", "123456789", DateTime.Now);
         }
