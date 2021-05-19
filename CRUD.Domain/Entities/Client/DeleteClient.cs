@@ -4,7 +4,7 @@ using CRUD.Domain.Utils.Validations;
 
 namespace CRUD.Domain.Entities.Client
 {
-    public class DeleteClient : Notifiable, ICommand
+    public class DeleteClient : ICommand
     {
         public DeleteClient() { }
 
@@ -16,11 +16,6 @@ namespace CRUD.Domain.Entities.Client
         public int Id { get; set; }
 
         public void Validate()
-        {
-            AddNotifications(
-                  new ValidateContract()
-                  .Required()
-              );
-        }
+        { }
     }
 }
