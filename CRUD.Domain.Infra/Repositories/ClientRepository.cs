@@ -35,7 +35,7 @@ namespace CRUD.Domain.Infra.Repositories
                 .AsNoTracking();
         }
 
-        public ClientItem GetById(Guid id)
+        public ClientItem GetById(int id)
         {
             return _context.Clients
                 .AsNoTracking()

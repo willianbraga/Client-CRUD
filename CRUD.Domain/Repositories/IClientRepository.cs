@@ -8,7 +8,7 @@ namespace CRUD.Domain.Repositories
     {
         void Create(ClientItem client);
         IEnumerable<ClientItem> GetAll();
-        ClientItem GetById(Guid id);
+        ClientItem GetById(int id);
         void Update(ClientItem client);
         void Delete(ClientItem client);
 
