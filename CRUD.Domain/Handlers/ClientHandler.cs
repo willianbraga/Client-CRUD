@@ -40,6 +40,9 @@ namespace CRUD.Domain.Handlers.Contracts
 
             var client = _repository.GetById(command.Id);
 
+            if (client == null)
+                return new GenericResult(SUCESS_MESSAGE, true, "Não possui cliente na base");
+
             client.UpdateClient(command);
 
             _repository.Update(client);

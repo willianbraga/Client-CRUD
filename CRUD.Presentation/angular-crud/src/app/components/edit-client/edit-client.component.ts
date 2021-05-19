@@ -102,11 +102,11 @@ export class EditClientComponent implements OnInit, AfterViewInit {
   }
 
   submit() {
-    console.log(this.client);
     if (this.clientForm.dirty && !this.clientForm.valid) {
       this.client = Object.assign({}, this.client, this.clientForm.value);
+      console.log(this.client);
 
-      this.clientService.updateClient(this.clientForm.value).subscribe(res => {
+      this.clientService.updateClient(this.client).subscribe(res => {
         this.router.navigateByUrl("/");
       });
     }
