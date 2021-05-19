@@ -1,3 +1,4 @@
+import { date } from 'ngx-custom-validators/src/app/date/validator';
 import { Observable, merge, fromEvent } from 'rxjs';
 import { ValidationMessages, Genericvalidator, DisplayMessage } from '../../utils/generic-form-validation';
 import { Client } from 'src/app/models/Client';
@@ -20,6 +21,7 @@ export class EditClientComponent implements OnInit, AfterViewInit {
   errors: any[] = [];
   clientForm: FormGroup;
   client: Client;
+  dt;
 
   validationMessages: ValidationMessages;
   genericValidator: Genericvalidator;
@@ -76,8 +78,10 @@ export class EditClientComponent implements OnInit, AfterViewInit {
         ])],
         birthDate: [new Date().toJSON().substring(0, 10), Validators.required]
       });
-
+    this.dt = this.client.birthDate;
     this.fillForm();
+
+
   }
 
   fillForm() {
@@ -86,7 +90,7 @@ export class EditClientComponent implements OnInit, AfterViewInit {
       name: this.client.name,
       phone: this.client.phone,
       email: this.client.email,
-      birthDate: this.client.birthDate.toString()
+      birthDate: this.client.birthDate
     });
   }
 
@@ -104,6 +108,7 @@ export class EditClientComponent implements OnInit, AfterViewInit {
   submit() {
     if (this.clientForm.dirty && !this.clientForm.valid) {
       this.client = Object.assign({}, this.client, this.clientForm.value);
+      this.client.phone = this.client.phone.replace(/[&\/\\#,+()$~%.'":*?<>{_}-]/g, '');
       console.log(this.client);
 
       this.clientService.updateClient(this.client).subscribe(res => {
