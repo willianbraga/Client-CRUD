@@ -94,7 +94,7 @@ export class NewClientComponent implements OnInit, AfterViewInit {
     if (this.clientForm.dirty && !this.clientForm.valid) {
       this.client = Object.assign({}, this.client, this.clientForm.value);
 
-      console.log(this.client);
+      this.client.phone = this.client.phone.replace(/[&\/\\#,+()$~%.'":*?<>{_}-]/g, '');
 
       this.clientService.createClient(this.clientForm.value).subscribe(res => {
         this.router.navigateByUrl("/");
