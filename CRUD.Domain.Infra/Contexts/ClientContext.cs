@@ -12,6 +12,11 @@ namespace CRUD.Domain.Infra.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<ClientItem>(x =>
+            {
+                x.HasKey(y => y.Id);
+                x.Property(y => y.Id).ValueGeneratedOnAdd();
+            });
             modelBuilder.Entity<ClientItem>().ToTable("Client");
             modelBuilder.Entity<ClientItem>().Property(x => x.Id);
             modelBuilder.Entity<ClientItem>().Property(x => x.Name).HasMaxLength(100).HasColumnType("varchar(100)");

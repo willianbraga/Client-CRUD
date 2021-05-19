@@ -6,7 +6,7 @@ namespace CRUD.Domain.Queries
 {
     public class ClientQueries
     {
-        public static Expression<Func<ClientItem, bool>> GetById(Guid id)
+        public static Expression<Func<ClientItem, bool>> GetById(int id)
         {
             return x => x.Id == id;
         }

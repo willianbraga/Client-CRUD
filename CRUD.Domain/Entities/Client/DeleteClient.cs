@@ -8,19 +8,18 @@ namespace CRUD.Domain.Entities.Client
     {
         public DeleteClient() { }
 
-        public DeleteClient(Guid id)
+        public DeleteClient(int id)
         {
             this.Id = id;
 
         }
-        public Guid Id { get; set; }
+        public int Id { get; set; }
 
         public void Validate()
         {
             AddNotifications(
                   new ValidateContract()
                   .Required()
-                  .IsEmpty(Id, "Id", "Necessario informar um Id valido.")
               );
         }
     }

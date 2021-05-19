@@ -2,18 +2,8 @@ using System;
 
 namespace CRUD.Domain.Entities
 {
-    public abstract class Entity : IEquatable<Entity>
+    public abstract class Entity
     {
-        public Entity()
-        {
-            this.Id = Guid.NewGuid();
-        }
-
-        public Guid Id { get; private set; }
-
-        public bool Equals(Entity other)
-        {
-            return Id == other.Id;
-        }
+        public int Id { get; private set; }
     }
 }

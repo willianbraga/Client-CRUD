@@ -8,7 +8,7 @@ namespace CRUD.Domain.Entities.Client
     {
         public UpdateClient() { }
 
-        public UpdateClient(Guid id, string name, string email, string phone, DateTime birthDate)
+        public UpdateClient(int id, string name, string email, string phone, DateTime birthDate)
         {
             this.Id = id;
             this.Name = name;
@@ -16,7 +16,7 @@ namespace CRUD.Domain.Entities.Client
             this.Phone = phone;
             this.BirthDate = birthDate;
         }
-        public Guid Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
