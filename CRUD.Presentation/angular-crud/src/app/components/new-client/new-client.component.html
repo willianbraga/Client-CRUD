@@ -1,0 +1,80 @@
+<div id="layoutAuthentication">
+  <div id="layoutAuthentication_content">
+    <main>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <div class="card shadow-lg border-0 rounded-lg mt-5">
+              <div class="card-header">
+                <h3 class="text-center font-weight-light my-4">Cadastrar Cliente</h3>
+              </div>
+              <div class="card-body">
+                <form novalidate (ngSubmit)="submit()" [formGroup]="clientForm">
+                  <div class="form-row">
+                    <div class="col-md-6">
+
+                      <div class="alert alert-danger" *ngIf="errors.length > 0">
+                        <h3 id="returnMsg">Foi detectado problemas, por favor verifique:</h3>
+                        <ul>
+                          <li *ngFor="let error of errors">{{ error }}</li>
+                        </ul>
+                      </div>
+
+                      <div class="form-group">
+                        <label class="small mb-1" for="name">Nome</label>
+                        <input class="form-control py-4" id="name" type="text" formControlName='name'
+                          [ngClass]="{ 'is-invalid':displayMessage.name }" placeholder="Informe seu Nome" />
+                        <span class="text-danger" *ngIf="displayMessage.name">
+                          <p [innerHTML]="displayMessage.name"></p>
+                        </span>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="small mb-1" for="phone">Telefone</label>
+                        <input class="form-control py-4" id="phone" type="text" formControlName='phone' phone
+                          [textMask]="{mask: MASK.telefone.textMask}" [ngClass]="{ 'is-invalid':displayMessage.phone
+                         }" placeholder="Informe seu Telefone" />
+                        <span class="text-danger" *ngIf="displayMessage.phone">
+                          <p [innerHTML]="displayMessage.phone"></p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="small mb-1" for="email">Email</label>
+                    <input class="form-control py-4" id="email" type="email" aria-describedby="emailHelp"
+                      formControlName='email' [ngClass]="{ 'is-invalid':displayMessage.email }"
+                      placeholder="Informe seu Email" />
+                    <span class="text-danger" *ngIf="displayMessage.email">
+                      <p [innerHTML]="displayMessage.email"></p>
+                    </span>
+                  </div>
+                  <div class="form-row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="small mb-1" for="lblbirthDate">Data de Nascimento</label>
+                        <input class="form-control py-4" id="date" type="date" formControlName="birthDate"
+                          placeholder="Informe a Data de Nascimento" />
+                        <span class="text-danger" *ngIf="displayMessage.birthDate">
+                          <p [innerHTML]="displayMessage.birthDate"></p>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group mt-4 mb-0">
+                    <span><button class="btn btn-primary btn-block" id="btnCreate" type="submit">
+                        <i class="fa fa-save"></i> Cadastrar</button></span>
+                  </div>
+                </form>
+              </div>
+              <div class="card-footer text-center">
+                <div class="small"><a [routerLink]="['/']">Voltar</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</div>

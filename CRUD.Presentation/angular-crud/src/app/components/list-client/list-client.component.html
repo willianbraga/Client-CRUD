@@ -1,0 +1,50 @@
+<main>
+  <div class="container-fluid">
+    <h1 class="mt-4"></h1>
+    <div class="card mb-4">
+      <div class="card-header">
+        <i class="fas fa-table mr-1"></i>
+        Clientes
+      </div>
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Data de Nascimento</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tfoot>
+              <tr>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Telefone</th>
+                <th>Data de Nascimento</th>
+                <th></th>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr *ngFor="let client of clients">
+                <td>{{client.name}}</td>
+                <td>{{client.email}}</td>
+                <td>{{client.phone}}</td>
+                <td>{{client.birthDate | date:"dd/MM/yyyy"}}</td>
+                <td>
+                  <div>
+                    <a class="btn btn-primary" [routerLink]="['/edit', client.id]">Editar</a> |
+                    <a class="btn btn-danger" (click)="deleteClient(client.id)">Excluir</a>
+
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
