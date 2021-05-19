@@ -108,8 +108,8 @@ export class EditClientComponent implements OnInit, AfterViewInit {
   submit() {
     if (this.clientForm.dirty && !this.clientForm.valid) {
       this.client = Object.assign({}, this.client, this.clientForm.value);
+      
       this.client.phone = this.client.phone.replace(/[&\/\\#,+()$~%.'":*?<>{_}-]/g, '');
-      console.log(this.client);
 
       this.clientService.updateClient(this.client).subscribe(res => {
         this.router.navigateByUrl("/");

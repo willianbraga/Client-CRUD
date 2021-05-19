@@ -43,8 +43,8 @@ namespace CRUD.Domain.Api
         {
             services.AddControllers();
 
-            services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
-            //services.AddDbContext<DataContext>(opt => opt.UseSqlServer(_configuration.GetConnectionString("connectionString")));
+            //services.AddDbContext<DataContext>(opt => opt.UseInMemoryDatabase("Database"));
+            services.AddDbContext<DataContext>(opt => opt.UseSqlServer(_configuration.GetConnectionString("connectionString")));
             services.AddTransient<IClientRepository, ClientRepository>();
             services.AddTransient<ClientHandler, ClientHandler>();
 
