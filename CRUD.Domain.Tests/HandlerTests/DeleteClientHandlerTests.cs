@@ -12,7 +12,7 @@ namespace CRUD.Domain.Tests.HandlerTests
     public class DeleteClientHandlerTests
     {
         private readonly DeleteClient _invalidCommand = new DeleteClient();
-        private readonly DeleteClient _validCommand = new DeleteClient(new Guid());
+        private readonly DeleteClient _validCommand = new DeleteClient(1);
         private readonly List<ClientItem> _clientList = new List<ClientItem>();
         private readonly ClientItem _client1 = new ClientItem("Willian", "willian.kaeru@gmail.com", "123456789", DateTime.Now);
         private readonly ClientItem _client2 = new ClientItem("Willian", "willian.kaeru@gmail.com", "123456789", DateTime.Now);
